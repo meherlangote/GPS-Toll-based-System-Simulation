@@ -1,0 +1,2517 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_55eab38bbb80e424a0b39c21d67b7fcb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_55eab38bbb80e424a0b39c21d67b7fcb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_55eab38bbb80e424a0b39c21d67b7fcb = L.map(
+                "map_55eab38bbb80e424a0b39c21d67b7fcb",
+                {
+                    center: [19.076, 72.8777],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e9dad66e3045e3bb6b96068a21d23714 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e9dad66e3045e3bb6b96068a21d23714.addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+            var marker_67bb01e355ca5d8daa24211738eb5fa1 = L.marker(
+                [19.076, 72.8777],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_1ac17134d400066f915f775a2a2b9153 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80f97d217883aa5b519d518b5a0b9713 = $(`<div id="html_80f97d217883aa5b519d518b5a0b9713" style="width: 100.0%; height: 100.0%;">Entry: Mumbai Toll</div>`)[0];
+                popup_1ac17134d400066f915f775a2a2b9153.setContent(html_80f97d217883aa5b519d518b5a0b9713);
+            
+        
+
+        marker_67bb01e355ca5d8daa24211738eb5fa1.bindPopup(popup_1ac17134d400066f915f775a2a2b9153)
+        ;
+
+        
+    
+    
+            var marker_bfb2416a72913ba0b055d20f3c35e727 = L.marker(
+                [19.2183, 73.1527],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_a97820cf6ff646cdc05b54a4016f0495 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd97d80ae765f5c28164afa7a4975196 = $(`<div id="html_fd97d80ae765f5c28164afa7a4975196" style="width: 100.0%; height: 100.0%;">Exit: Mumbai Toll</div>`)[0];
+                popup_a97820cf6ff646cdc05b54a4016f0495.setContent(html_fd97d80ae765f5c28164afa7a4975196);
+            
+        
+
+        marker_bfb2416a72913ba0b055d20f3c35e727.bindPopup(popup_a97820cf6ff646cdc05b54a4016f0495)
+        ;
+
+        
+    
+    
+            var poly_line_9562bf22c60a7514655df030310d96bd = L.polyline(
+                [[19.076, 72.8777], [19.2183, 73.1527]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+            var marker_f2c75b3fcc5fe7274b0dda8c5f6f3f57 = L.marker(
+                [18.5204, 73.8567],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_26c1e9a986cb501b2ede86179320d54c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11d2a4522c44b3870e10676010884900 = $(`<div id="html_11d2a4522c44b3870e10676010884900" style="width: 100.0%; height: 100.0%;">Entry: Pune Toll</div>`)[0];
+                popup_26c1e9a986cb501b2ede86179320d54c.setContent(html_11d2a4522c44b3870e10676010884900);
+            
+        
+
+        marker_f2c75b3fcc5fe7274b0dda8c5f6f3f57.bindPopup(popup_26c1e9a986cb501b2ede86179320d54c)
+        ;
+
+        
+    
+    
+            var marker_1c368f08d896187183fa3180944a6ead = L.marker(
+                [18.6298, 73.7997],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_bbb21d76481a672e0200f1f38c7d4309 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4471cac82297dbfdcc616c389830fd3 = $(`<div id="html_d4471cac82297dbfdcc616c389830fd3" style="width: 100.0%; height: 100.0%;">Exit: Pune Toll</div>`)[0];
+                popup_bbb21d76481a672e0200f1f38c7d4309.setContent(html_d4471cac82297dbfdcc616c389830fd3);
+            
+        
+
+        marker_1c368f08d896187183fa3180944a6ead.bindPopup(popup_bbb21d76481a672e0200f1f38c7d4309)
+        ;
+
+        
+    
+    
+            var poly_line_a2b43fc2f0307398acf6584592c33910 = L.polyline(
+                [[18.5204, 73.8567], [18.6298, 73.7997]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+            var marker_7a565438a72bd96d8479cace49a30d8c = L.marker(
+                [21.1458, 79.0882],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_be3e9be8bbbacb980a45c201788d3b2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_263528c2ed54e332582af8c49dcd3cf8 = $(`<div id="html_263528c2ed54e332582af8c49dcd3cf8" style="width: 100.0%; height: 100.0%;">Entry: Nagpur Toll</div>`)[0];
+                popup_be3e9be8bbbacb980a45c201788d3b2c.setContent(html_263528c2ed54e332582af8c49dcd3cf8);
+            
+        
+
+        marker_7a565438a72bd96d8479cace49a30d8c.bindPopup(popup_be3e9be8bbbacb980a45c201788d3b2c)
+        ;
+
+        
+    
+    
+            var marker_8d4369178f4d83c833d463c861fcb3c7 = L.marker(
+                [21.2514, 79.1575],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_8d52713effdd11c786cf1500d7e0c9bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39c3bacfe2433bbb9d9c0472987fc658 = $(`<div id="html_39c3bacfe2433bbb9d9c0472987fc658" style="width: 100.0%; height: 100.0%;">Exit: Nagpur Toll</div>`)[0];
+                popup_8d52713effdd11c786cf1500d7e0c9bd.setContent(html_39c3bacfe2433bbb9d9c0472987fc658);
+            
+        
+
+        marker_8d4369178f4d83c833d463c861fcb3c7.bindPopup(popup_8d52713effdd11c786cf1500d7e0c9bd)
+        ;
+
+        
+    
+    
+            var poly_line_a5ca0faa5e27a95a103b312bd4f043ef = L.polyline(
+                [[21.1458, 79.0882], [21.2514, 79.1575]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+            var marker_8cfc887d79ce2a2b8203ec3cadd12af4 = L.marker(
+                [19.9975, 73.7898],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_f1ac12a15a7936056d5c50bda68f25d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_629065a4a52c1ca3485688bed1041ba7 = $(`<div id="html_629065a4a52c1ca3485688bed1041ba7" style="width: 100.0%; height: 100.0%;">Entry: Nashik Toll</div>`)[0];
+                popup_f1ac12a15a7936056d5c50bda68f25d5.setContent(html_629065a4a52c1ca3485688bed1041ba7);
+            
+        
+
+        marker_8cfc887d79ce2a2b8203ec3cadd12af4.bindPopup(popup_f1ac12a15a7936056d5c50bda68f25d5)
+        ;
+
+        
+    
+    
+            var marker_31d9d1284adbd73cfad71d174e5341ca = L.marker(
+                [20.011, 73.7802],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_9abbe10beb888eb80031b22e6e73b1a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82cf58bda4a686e3b09b28a9a4a4eeef = $(`<div id="html_82cf58bda4a686e3b09b28a9a4a4eeef" style="width: 100.0%; height: 100.0%;">Exit: Nashik Toll</div>`)[0];
+                popup_9abbe10beb888eb80031b22e6e73b1a1.setContent(html_82cf58bda4a686e3b09b28a9a4a4eeef);
+            
+        
+
+        marker_31d9d1284adbd73cfad71d174e5341ca.bindPopup(popup_9abbe10beb888eb80031b22e6e73b1a1)
+        ;
+
+        
+    
+    
+            var poly_line_7cea1720ebc570415f8a2dc5b622ef5e = L.polyline(
+                [[19.9975, 73.7898], [20.011, 73.7802]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+            var marker_e7f7d92a96b6df04ea0de116a32d54d7 = L.marker(
+                [19.8762, 75.3433],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_dfc6d3417c8b6246fac4fe6871e5f729 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5b73c56ef99ce6818c06a6040f3bef1 = $(`<div id="html_c5b73c56ef99ce6818c06a6040f3bef1" style="width: 100.0%; height: 100.0%;">Entry: Aurangabad Toll</div>`)[0];
+                popup_dfc6d3417c8b6246fac4fe6871e5f729.setContent(html_c5b73c56ef99ce6818c06a6040f3bef1);
+            
+        
+
+        marker_e7f7d92a96b6df04ea0de116a32d54d7.bindPopup(popup_dfc6d3417c8b6246fac4fe6871e5f729)
+        ;
+
+        
+    
+    
+            var marker_6ed97228f3bdca90e5a115011dbd1e32 = L.marker(
+                [19.9283, 75.3093],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_db31d43200da47d7ec2db6ca5c5fe2d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4eed6c03f8b8115e14db83c6b0941ae1 = $(`<div id="html_4eed6c03f8b8115e14db83c6b0941ae1" style="width: 100.0%; height: 100.0%;">Exit: Aurangabad Toll</div>`)[0];
+                popup_db31d43200da47d7ec2db6ca5c5fe2d4.setContent(html_4eed6c03f8b8115e14db83c6b0941ae1);
+            
+        
+
+        marker_6ed97228f3bdca90e5a115011dbd1e32.bindPopup(popup_db31d43200da47d7ec2db6ca5c5fe2d4)
+        ;
+
+        
+    
+    
+            var poly_line_5a253109a21c6afa87b604d6aaf3beaf = L.polyline(
+                [[19.8762, 75.3433], [19.9283, 75.3093]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+            var marker_9affce0fb00e53600da3b8208a8d0a0b = L.marker(
+                [19.8762, 75.3433],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_c4b980133cd5c3f961b948d3f455827f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5191667a5bf4ee9be4bf2aeb6cd729ee = $(`<div id="html_5191667a5bf4ee9be4bf2aeb6cd729ee" style="width: 100.0%; height: 100.0%;">Vehicle 1 Entry: Aurangabad Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_c4b980133cd5c3f961b948d3f455827f.setContent(html_5191667a5bf4ee9be4bf2aeb6cd729ee);
+            
+        
+
+        marker_9affce0fb00e53600da3b8208a8d0a0b.bindPopup(popup_c4b980133cd5c3f961b948d3f455827f)
+        ;
+
+        
+    
+    
+            var marker_e4543d80f55c87f8a3b7a8bb7016136d = L.marker(
+                [19.9283, 75.3093],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_5afbc1ec49a13110e6cebf62551f2780 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2fcffecb55975d37a072957f4d84e8be = $(`<div id="html_2fcffecb55975d37a072957f4d84e8be" style="width: 100.0%; height: 100.0%;">Vehicle 1 Exit: Aurangabad Toll, Toll: ₹30.50, Speed: 59.43 km/h</div>`)[0];
+                popup_5afbc1ec49a13110e6cebf62551f2780.setContent(html_2fcffecb55975d37a072957f4d84e8be);
+            
+        
+
+        marker_e4543d80f55c87f8a3b7a8bb7016136d.bindPopup(popup_5afbc1ec49a13110e6cebf62551f2780)
+        ;
+
+        
+    
+    
+            var marker_a64f0dde5211d6700e8663f7fddfe1f8 = L.marker(
+                [21.1458, 79.0882],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_bdfdd4a12cf594fbba2eb6c9b40f9789 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_617fb5e9daf52b13a38cc4e9ca267819 = $(`<div id="html_617fb5e9daf52b13a38cc4e9ca267819" style="width: 100.0%; height: 100.0%;">Vehicle 1 Entry: Nagpur Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_bdfdd4a12cf594fbba2eb6c9b40f9789.setContent(html_617fb5e9daf52b13a38cc4e9ca267819);
+            
+        
+
+        marker_a64f0dde5211d6700e8663f7fddfe1f8.bindPopup(popup_bdfdd4a12cf594fbba2eb6c9b40f9789)
+        ;
+
+        
+    
+    
+            var marker_83748a9cc1a3654e876483e28a650888 = L.marker(
+                [21.2514, 79.1575],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_2167b28a95997e3ac988bbb671e7af0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6b16f562144930c4eacd95484d01e3c = $(`<div id="html_e6b16f562144930c4eacd95484d01e3c" style="width: 100.0%; height: 100.0%;">Vehicle 1 Exit: Nagpur Toll, Toll: ₹82.37, Speed: 65.94 km/h</div>`)[0];
+                popup_2167b28a95997e3ac988bbb671e7af0b.setContent(html_e6b16f562144930c4eacd95484d01e3c);
+            
+        
+
+        marker_83748a9cc1a3654e876483e28a650888.bindPopup(popup_2167b28a95997e3ac988bbb671e7af0b)
+        ;
+
+        
+    
+    
+            var marker_77aaead3f1dd8a9296d8334c395ec755 = L.marker(
+                [19.8762, 75.3433],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_dee21172ec5b5faaa27ae2c01597d16e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4a2cfe64e29b4e8c913e4596a93c199 = $(`<div id="html_b4a2cfe64e29b4e8c913e4596a93c199" style="width: 100.0%; height: 100.0%;">Vehicle 1 Entry: Aurangabad Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_dee21172ec5b5faaa27ae2c01597d16e.setContent(html_b4a2cfe64e29b4e8c913e4596a93c199);
+            
+        
+
+        marker_77aaead3f1dd8a9296d8334c395ec755.bindPopup(popup_dee21172ec5b5faaa27ae2c01597d16e)
+        ;
+
+        
+    
+    
+            var marker_e1a8abca9cb1c2d6a93d2291d36d212d = L.marker(
+                [19.9283, 75.3093],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_d80f2be3663fc603f429bfb850a2bf0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e0d1f0cbc18fa65008fc79aeecd96f7 = $(`<div id="html_2e0d1f0cbc18fa65008fc79aeecd96f7" style="width: 100.0%; height: 100.0%;">Vehicle 1 Exit: Aurangabad Toll, Toll: ₹30.50, Speed: 78.38 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_d80f2be3663fc603f429bfb850a2bf0a.setContent(html_2e0d1f0cbc18fa65008fc79aeecd96f7);
+            
+        
+
+        marker_e1a8abca9cb1c2d6a93d2291d36d212d.bindPopup(popup_d80f2be3663fc603f429bfb850a2bf0a)
+        ;
+
+        
+    
+    
+            var marker_03dd3bc6115cf0f5e85baca2b95adad5 = L.marker(
+                [19.8762, 75.3433],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_b8deb41612a03a0c1cdfbb2c3373ef85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_022ae72ade598e61be3a56f09edfc2b5 = $(`<div id="html_022ae72ade598e61be3a56f09edfc2b5" style="width: 100.0%; height: 100.0%;">Vehicle 1 Entry: Aurangabad Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_b8deb41612a03a0c1cdfbb2c3373ef85.setContent(html_022ae72ade598e61be3a56f09edfc2b5);
+            
+        
+
+        marker_03dd3bc6115cf0f5e85baca2b95adad5.bindPopup(popup_b8deb41612a03a0c1cdfbb2c3373ef85)
+        ;
+
+        
+    
+    
+            var marker_971cb0ccf3a267a60172c63eafa1fd75 = L.marker(
+                [19.9283, 75.3093],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_45d77159adebbdffa475d173308f4468 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51e32fc37a90ea3c766cdd82456a35bd = $(`<div id="html_51e32fc37a90ea3c766cdd82456a35bd" style="width: 100.0%; height: 100.0%;">Vehicle 1 Exit: Aurangabad Toll, Toll: ₹30.50, Speed: 72.53 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_45d77159adebbdffa475d173308f4468.setContent(html_51e32fc37a90ea3c766cdd82456a35bd);
+            
+        
+
+        marker_971cb0ccf3a267a60172c63eafa1fd75.bindPopup(popup_45d77159adebbdffa475d173308f4468)
+        ;
+
+        
+    
+    
+            var marker_40596551ebe96679c37e52ae5c5982f9 = L.marker(
+                [19.9975, 73.7898],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_aa079d9ca76da50fd34253ae04e19b12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95a0ef12f35897ae368d2c38fc7032e9 = $(`<div id="html_95a0ef12f35897ae368d2c38fc7032e9" style="width: 100.0%; height: 100.0%;">Vehicle 1 Entry: Nashik Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_aa079d9ca76da50fd34253ae04e19b12.setContent(html_95a0ef12f35897ae368d2c38fc7032e9);
+            
+        
+
+        marker_40596551ebe96679c37e52ae5c5982f9.bindPopup(popup_aa079d9ca76da50fd34253ae04e19b12)
+        ;
+
+        
+    
+    
+            var marker_265c35b21d10f78a72d3babe275b0290 = L.marker(
+                [20.011, 73.7802],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_857dbeb355e47d62fdb9a942cf3d0a03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f15de1163f86c23a379d826ff05967fd = $(`<div id="html_f15de1163f86c23a379d826ff05967fd" style="width: 100.0%; height: 100.0%;">Vehicle 1 Exit: Nashik Toll, Toll: ₹6.30, Speed: 69.90 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_857dbeb355e47d62fdb9a942cf3d0a03.setContent(html_f15de1163f86c23a379d826ff05967fd);
+            
+        
+
+        marker_265c35b21d10f78a72d3babe275b0290.bindPopup(popup_857dbeb355e47d62fdb9a942cf3d0a03)
+        ;
+
+        
+    
+    
+            var marker_35717d34443e2970c9c756818acd5b96 = L.marker(
+                [19.8762, 75.3433],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_b933afda197a4ec4c9640b279db11005 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_982370905bf8b404352bf5dfbd7df0f3 = $(`<div id="html_982370905bf8b404352bf5dfbd7df0f3" style="width: 100.0%; height: 100.0%;">Vehicle 1 Entry: Aurangabad Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_b933afda197a4ec4c9640b279db11005.setContent(html_982370905bf8b404352bf5dfbd7df0f3);
+            
+        
+
+        marker_35717d34443e2970c9c756818acd5b96.bindPopup(popup_b933afda197a4ec4c9640b279db11005)
+        ;
+
+        
+    
+    
+            var marker_de015950e444de5412a9abc33dd5922a = L.marker(
+                [19.9283, 75.3093],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_fcff81f0e05ceb872017dd09b527bb54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_171d10447cc5d6e941a03443ac1e47ba = $(`<div id="html_171d10447cc5d6e941a03443ac1e47ba" style="width: 100.0%; height: 100.0%;">Vehicle 1 Exit: Aurangabad Toll, Toll: ₹30.50, Speed: 84.14 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_fcff81f0e05ceb872017dd09b527bb54.setContent(html_171d10447cc5d6e941a03443ac1e47ba);
+            
+        
+
+        marker_de015950e444de5412a9abc33dd5922a.bindPopup(popup_fcff81f0e05ceb872017dd09b527bb54)
+        ;
+
+        
+    
+    
+            var marker_378352379920f4735b935292a776cd6c = L.marker(
+                [21.1458, 79.0882],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_05e3f32f04d70b5427d0e2767a9186ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b75cc6e5fc3e8be9e19f5a58c322c62 = $(`<div id="html_1b75cc6e5fc3e8be9e19f5a58c322c62" style="width: 100.0%; height: 100.0%;">Vehicle 1 Entry: Nagpur Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_05e3f32f04d70b5427d0e2767a9186ab.setContent(html_1b75cc6e5fc3e8be9e19f5a58c322c62);
+            
+        
+
+        marker_378352379920f4735b935292a776cd6c.bindPopup(popup_05e3f32f04d70b5427d0e2767a9186ab)
+        ;
+
+        
+    
+    
+            var marker_b178b6546fd5a2b8e5c947eb5e5ebefc = L.marker(
+                [21.2514, 79.1575],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_7234fd1e07e29c45bd050996f1650f62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_408cc24e8003b2b9fad6969a93695257 = $(`<div id="html_408cc24e8003b2b9fad6969a93695257" style="width: 100.0%; height: 100.0%;">Vehicle 1 Exit: Nagpur Toll, Toll: ₹82.37, Speed: 74.37 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_7234fd1e07e29c45bd050996f1650f62.setContent(html_408cc24e8003b2b9fad6969a93695257);
+            
+        
+
+        marker_b178b6546fd5a2b8e5c947eb5e5ebefc.bindPopup(popup_7234fd1e07e29c45bd050996f1650f62)
+        ;
+
+        
+    
+    
+            var marker_54fc2383fe828490fc0a468b01904900 = L.marker(
+                [21.1458, 79.0882],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_2301a465e1c657307fee565f8be25a6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a66de8612629e5984b1d039f61af8040 = $(`<div id="html_a66de8612629e5984b1d039f61af8040" style="width: 100.0%; height: 100.0%;">Vehicle 1 Entry: Nagpur Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_2301a465e1c657307fee565f8be25a6a.setContent(html_a66de8612629e5984b1d039f61af8040);
+            
+        
+
+        marker_54fc2383fe828490fc0a468b01904900.bindPopup(popup_2301a465e1c657307fee565f8be25a6a)
+        ;
+
+        
+    
+    
+            var marker_8c665d137500ea3729ae8998746bb339 = L.marker(
+                [21.2514, 79.1575],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_784925f6dc2a3bb01c8154d96281b561 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_687e992058b077e1ea51c33429699369 = $(`<div id="html_687e992058b077e1ea51c33429699369" style="width: 100.0%; height: 100.0%;">Vehicle 1 Exit: Nagpur Toll, Toll: ₹82.37, Speed: 69.61 km/h</div>`)[0];
+                popup_784925f6dc2a3bb01c8154d96281b561.setContent(html_687e992058b077e1ea51c33429699369);
+            
+        
+
+        marker_8c665d137500ea3729ae8998746bb339.bindPopup(popup_784925f6dc2a3bb01c8154d96281b561)
+        ;
+
+        
+    
+    
+            var marker_9e3a112692aaa78e1bf62abe579aa355 = L.marker(
+                [19.8762, 75.3433],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_6ce4ba60130fecf73de7976fea5d9c52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa467246625fca896b72e816f8475f27 = $(`<div id="html_aa467246625fca896b72e816f8475f27" style="width: 100.0%; height: 100.0%;">Vehicle 1 Entry: Aurangabad Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_6ce4ba60130fecf73de7976fea5d9c52.setContent(html_aa467246625fca896b72e816f8475f27);
+            
+        
+
+        marker_9e3a112692aaa78e1bf62abe579aa355.bindPopup(popup_6ce4ba60130fecf73de7976fea5d9c52)
+        ;
+
+        
+    
+    
+            var marker_647bda34c26e447723984501d4013107 = L.marker(
+                [19.9283, 75.3093],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_17daa4328d7c46b36019165aa13b59a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_322560f18831d9a3ee43e1d15a34380e = $(`<div id="html_322560f18831d9a3ee43e1d15a34380e" style="width: 100.0%; height: 100.0%;">Vehicle 1 Exit: Aurangabad Toll, Toll: ₹30.50, Speed: 80.12 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_17daa4328d7c46b36019165aa13b59a7.setContent(html_322560f18831d9a3ee43e1d15a34380e);
+            
+        
+
+        marker_647bda34c26e447723984501d4013107.bindPopup(popup_17daa4328d7c46b36019165aa13b59a7)
+        ;
+
+        
+    
+    
+            var marker_cff35a3f34927f378c8814df7437224c = L.marker(
+                [18.5204, 73.8567],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_c93b0397bb604b70f93239fe906eaa5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04123a084c366af10a78634e4b3d2d80 = $(`<div id="html_04123a084c366af10a78634e4b3d2d80" style="width: 100.0%; height: 100.0%;">Vehicle 1 Entry: Pune Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_c93b0397bb604b70f93239fe906eaa5a.setContent(html_04123a084c366af10a78634e4b3d2d80);
+            
+        
+
+        marker_cff35a3f34927f378c8814df7437224c.bindPopup(popup_c93b0397bb604b70f93239fe906eaa5a)
+        ;
+
+        
+    
+    
+            var marker_b3e03c3c9c0e2f8f806d515e038a2f30 = L.marker(
+                [18.6298, 73.7997],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_3855b5c626ad79c7d3b515d75132ae13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0cea6cab808f7788b40bd7934f748372 = $(`<div id="html_0cea6cab808f7788b40bd7934f748372" style="width: 100.0%; height: 100.0%;">Vehicle 1 Exit: Pune Toll, Toll: ₹54.09, Speed: 67.13 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_3855b5c626ad79c7d3b515d75132ae13.setContent(html_0cea6cab808f7788b40bd7934f748372);
+            
+        
+
+        marker_b3e03c3c9c0e2f8f806d515e038a2f30.bindPopup(popup_3855b5c626ad79c7d3b515d75132ae13)
+        ;
+
+        
+    
+    
+            var marker_74c8d9e04ca72e3bf49f21ba1872c896 = L.marker(
+                [18.6298, 73.7997],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_c43821915d7969e6943f36d8cd890f83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11924ae10f598b6f4f05f4d6a2ea2f4e = $(`<div id="html_11924ae10f598b6f4f05f4d6a2ea2f4e" style="width: 100.0%; height: 100.0%;">Vehicle 1 (car), Total Toll: ₹460.01</div>`)[0];
+                popup_c43821915d7969e6943f36d8cd890f83.setContent(html_11924ae10f598b6f4f05f4d6a2ea2f4e);
+            
+        
+
+        marker_74c8d9e04ca72e3bf49f21ba1872c896.bindPopup(popup_c43821915d7969e6943f36d8cd890f83)
+        ;
+
+        
+    
+    
+            var marker_940607818e57044cd77998980d34838e = L.marker(
+                [18.5204, 73.8567],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_daf7a9cf561dd3dd20bd1a934183c230 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09effe607b66d7604a0fe61cf59b0c33 = $(`<div id="html_09effe607b66d7604a0fe61cf59b0c33" style="width: 100.0%; height: 100.0%;">Vehicle 2 Entry: Pune Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_daf7a9cf561dd3dd20bd1a934183c230.setContent(html_09effe607b66d7604a0fe61cf59b0c33);
+            
+        
+
+        marker_940607818e57044cd77998980d34838e.bindPopup(popup_daf7a9cf561dd3dd20bd1a934183c230)
+        ;
+
+        
+    
+    
+            var marker_112b1d4172a0516e408eab8336ff7c23 = L.marker(
+                [18.6298, 73.7997],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_09b41af502a98649a160bb4cc93c3672 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e21c82064836befe24cfc61597804fd = $(`<div id="html_0e21c82064836befe24cfc61597804fd" style="width: 100.0%; height: 100.0%;">Vehicle 2 Exit: Pune Toll, Toll: ₹108.17, Speed: 61.79 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_09b41af502a98649a160bb4cc93c3672.setContent(html_0e21c82064836befe24cfc61597804fd);
+            
+        
+
+        marker_112b1d4172a0516e408eab8336ff7c23.bindPopup(popup_09b41af502a98649a160bb4cc93c3672)
+        ;
+
+        
+    
+    
+            var marker_6e7e76fbaaa93db77e33dc2e38708a93 = L.marker(
+                [19.076, 72.8777],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_c8e3044621fd3248d08661a3bee5c436 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e29e906bf4aafb61836bb19f52d03129 = $(`<div id="html_e29e906bf4aafb61836bb19f52d03129" style="width: 100.0%; height: 100.0%;">Vehicle 2 Entry: Mumbai Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_c8e3044621fd3248d08661a3bee5c436.setContent(html_e29e906bf4aafb61836bb19f52d03129);
+            
+        
+
+        marker_6e7e76fbaaa93db77e33dc2e38708a93.bindPopup(popup_c8e3044621fd3248d08661a3bee5c436)
+        ;
+
+        
+    
+    
+            var marker_73e9495af5d2287718123c22502ed323 = L.marker(
+                [19.2183, 73.1527],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_68a79d7866fccc75ddac05ff6dbc73e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d975b1a499f3b7fb9943eece5ce8640 = $(`<div id="html_9d975b1a499f3b7fb9943eece5ce8640" style="width: 100.0%; height: 100.0%;">Vehicle 2 Exit: Mumbai Toll, Toll: ₹329.40, Speed: 54.06 km/h</div>`)[0];
+                popup_68a79d7866fccc75ddac05ff6dbc73e3.setContent(html_9d975b1a499f3b7fb9943eece5ce8640);
+            
+        
+
+        marker_73e9495af5d2287718123c22502ed323.bindPopup(popup_68a79d7866fccc75ddac05ff6dbc73e3)
+        ;
+
+        
+    
+    
+            var marker_486fff9d5fde833fa4e8f9d31a83ca78 = L.marker(
+                [19.076, 72.8777],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_9b77537a715d599d764ed43fd6f1813a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76d6c33cf26ee753658c35dfad030ab3 = $(`<div id="html_76d6c33cf26ee753658c35dfad030ab3" style="width: 100.0%; height: 100.0%;">Vehicle 2 Entry: Mumbai Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_9b77537a715d599d764ed43fd6f1813a.setContent(html_76d6c33cf26ee753658c35dfad030ab3);
+            
+        
+
+        marker_486fff9d5fde833fa4e8f9d31a83ca78.bindPopup(popup_9b77537a715d599d764ed43fd6f1813a)
+        ;
+
+        
+    
+    
+            var marker_45c293ca99b09fc17db22bf26e9e68ea = L.marker(
+                [19.2183, 73.1527],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_b94cf908ad273bcbb92ca365d1e1d948 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea7b6524a2a8569c24ea2b60991bb1d5 = $(`<div id="html_ea7b6524a2a8569c24ea2b60991bb1d5" style="width: 100.0%; height: 100.0%;">Vehicle 2 Exit: Mumbai Toll, Toll: ₹329.40, Speed: 61.57 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_b94cf908ad273bcbb92ca365d1e1d948.setContent(html_ea7b6524a2a8569c24ea2b60991bb1d5);
+            
+        
+
+        marker_45c293ca99b09fc17db22bf26e9e68ea.bindPopup(popup_b94cf908ad273bcbb92ca365d1e1d948)
+        ;
+
+        
+    
+    
+            var marker_49252b9718d3787b2f0fc6f4ee7b97ef = L.marker(
+                [18.5204, 73.8567],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_0f150294d34b2dceb47eafb302cf5ae1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_586867960777ad1f0f6fdd437ace037f = $(`<div id="html_586867960777ad1f0f6fdd437ace037f" style="width: 100.0%; height: 100.0%;">Vehicle 2 Entry: Pune Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_0f150294d34b2dceb47eafb302cf5ae1.setContent(html_586867960777ad1f0f6fdd437ace037f);
+            
+        
+
+        marker_49252b9718d3787b2f0fc6f4ee7b97ef.bindPopup(popup_0f150294d34b2dceb47eafb302cf5ae1)
+        ;
+
+        
+    
+    
+            var marker_619d475de4bc8c9933ec856120f751d6 = L.marker(
+                [18.6298, 73.7997],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_8904f13af4e4fd5af45daa382d2efe6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45c7cb4de239d3a526e5a0d48b0752ac = $(`<div id="html_45c7cb4de239d3a526e5a0d48b0752ac" style="width: 100.0%; height: 100.0%;">Vehicle 2 Exit: Pune Toll, Toll: ₹108.17, Speed: 43.18 km/h</div>`)[0];
+                popup_8904f13af4e4fd5af45daa382d2efe6c.setContent(html_45c7cb4de239d3a526e5a0d48b0752ac);
+            
+        
+
+        marker_619d475de4bc8c9933ec856120f751d6.bindPopup(popup_8904f13af4e4fd5af45daa382d2efe6c)
+        ;
+
+        
+    
+    
+            var marker_0748d1a20847f2ed8daebc7b794938c8 = L.marker(
+                [18.5204, 73.8567],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_98177c2cc6532ff75e0f3b6b599a4c6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4f0f1bffad1f76250db5b662eea1964 = $(`<div id="html_e4f0f1bffad1f76250db5b662eea1964" style="width: 100.0%; height: 100.0%;">Vehicle 2 Entry: Pune Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_98177c2cc6532ff75e0f3b6b599a4c6c.setContent(html_e4f0f1bffad1f76250db5b662eea1964);
+            
+        
+
+        marker_0748d1a20847f2ed8daebc7b794938c8.bindPopup(popup_98177c2cc6532ff75e0f3b6b599a4c6c)
+        ;
+
+        
+    
+    
+            var marker_bf9a55c8212acb550517f9e209714022 = L.marker(
+                [18.6298, 73.7997],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_ed3aed649f3af029d876073f7fa225df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae0c37158d5a0d2bee4a073e3515a6d7 = $(`<div id="html_ae0c37158d5a0d2bee4a073e3515a6d7" style="width: 100.0%; height: 100.0%;">Vehicle 2 Exit: Pune Toll, Toll: ₹108.17, Speed: 56.60 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_ed3aed649f3af029d876073f7fa225df.setContent(html_ae0c37158d5a0d2bee4a073e3515a6d7);
+            
+        
+
+        marker_bf9a55c8212acb550517f9e209714022.bindPopup(popup_ed3aed649f3af029d876073f7fa225df)
+        ;
+
+        
+    
+    
+            var marker_baa58b0af3da2790f41b3776c8ae0f78 = L.marker(
+                [19.9975, 73.7898],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_deeb4007920f4286f00823495fa79602 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57aebe384523f73b1c749bf79027be81 = $(`<div id="html_57aebe384523f73b1c749bf79027be81" style="width: 100.0%; height: 100.0%;">Vehicle 2 Entry: Nashik Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_deeb4007920f4286f00823495fa79602.setContent(html_57aebe384523f73b1c749bf79027be81);
+            
+        
+
+        marker_baa58b0af3da2790f41b3776c8ae0f78.bindPopup(popup_deeb4007920f4286f00823495fa79602)
+        ;
+
+        
+    
+    
+            var marker_617720ec41cbd199a4b3c0d0ea589bf9 = L.marker(
+                [20.011, 73.7802],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_0b55bb4d85d6606fbaf3b914a74bc690 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04eadc00a2e3aae061385054ed97342a = $(`<div id="html_04eadc00a2e3aae061385054ed97342a" style="width: 100.0%; height: 100.0%;">Vehicle 2 Exit: Nashik Toll, Toll: ₹12.61, Speed: 46.66 km/h</div>`)[0];
+                popup_0b55bb4d85d6606fbaf3b914a74bc690.setContent(html_04eadc00a2e3aae061385054ed97342a);
+            
+        
+
+        marker_617720ec41cbd199a4b3c0d0ea589bf9.bindPopup(popup_0b55bb4d85d6606fbaf3b914a74bc690)
+        ;
+
+        
+    
+    
+            var marker_6d580615bf57e415b2a27738e13bd8e6 = L.marker(
+                [18.5204, 73.8567],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_4a181d4f39bfc82c4bc821a15af2ea43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c81e94f886adb8db4af674674f6ece74 = $(`<div id="html_c81e94f886adb8db4af674674f6ece74" style="width: 100.0%; height: 100.0%;">Vehicle 2 Entry: Pune Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_4a181d4f39bfc82c4bc821a15af2ea43.setContent(html_c81e94f886adb8db4af674674f6ece74);
+            
+        
+
+        marker_6d580615bf57e415b2a27738e13bd8e6.bindPopup(popup_4a181d4f39bfc82c4bc821a15af2ea43)
+        ;
+
+        
+    
+    
+            var marker_17b1e384dc5f6a6b91781c30a74c4b80 = L.marker(
+                [18.6298, 73.7997],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_2db15378b18ec4c2c8ea08fb4e87e92a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fd7133324b51cf948d6e35fb5514308 = $(`<div id="html_8fd7133324b51cf948d6e35fb5514308" style="width: 100.0%; height: 100.0%;">Vehicle 2 Exit: Pune Toll, Toll: ₹108.17, Speed: 46.06 km/h</div>`)[0];
+                popup_2db15378b18ec4c2c8ea08fb4e87e92a.setContent(html_8fd7133324b51cf948d6e35fb5514308);
+            
+        
+
+        marker_17b1e384dc5f6a6b91781c30a74c4b80.bindPopup(popup_2db15378b18ec4c2c8ea08fb4e87e92a)
+        ;
+
+        
+    
+    
+            var marker_89bcf326ea5b40531f119c20dd3aa3d1 = L.marker(
+                [19.9975, 73.7898],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_0e409225cf939365501208db82651551 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71a1244e68400cf440e305c62a421dd3 = $(`<div id="html_71a1244e68400cf440e305c62a421dd3" style="width: 100.0%; height: 100.0%;">Vehicle 2 Entry: Nashik Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_0e409225cf939365501208db82651551.setContent(html_71a1244e68400cf440e305c62a421dd3);
+            
+        
+
+        marker_89bcf326ea5b40531f119c20dd3aa3d1.bindPopup(popup_0e409225cf939365501208db82651551)
+        ;
+
+        
+    
+    
+            var marker_e5d01a56bae89ce32de4251a8f56e450 = L.marker(
+                [20.011, 73.7802],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_d43cdbc8eb83b768e04661d1d2a30c78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ee583fbf42c4dbb94221ee4eaec5c65 = $(`<div id="html_4ee583fbf42c4dbb94221ee4eaec5c65" style="width: 100.0%; height: 100.0%;">Vehicle 2 Exit: Nashik Toll, Toll: ₹12.61, Speed: 50.66 km/h</div>`)[0];
+                popup_d43cdbc8eb83b768e04661d1d2a30c78.setContent(html_4ee583fbf42c4dbb94221ee4eaec5c65);
+            
+        
+
+        marker_e5d01a56bae89ce32de4251a8f56e450.bindPopup(popup_d43cdbc8eb83b768e04661d1d2a30c78)
+        ;
+
+        
+    
+    
+            var marker_5cfa7f127ff0b054692e023224ef1944 = L.marker(
+                [19.8762, 75.3433],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_e62452df3c1eef5820da976fd98346fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d194b4ced46dae4ee7bb03286ba0135 = $(`<div id="html_4d194b4ced46dae4ee7bb03286ba0135" style="width: 100.0%; height: 100.0%;">Vehicle 2 Entry: Aurangabad Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_e62452df3c1eef5820da976fd98346fa.setContent(html_4d194b4ced46dae4ee7bb03286ba0135);
+            
+        
+
+        marker_5cfa7f127ff0b054692e023224ef1944.bindPopup(popup_e62452df3c1eef5820da976fd98346fa)
+        ;
+
+        
+    
+    
+            var marker_0709f1f010969c66bd2758f57f7fe935 = L.marker(
+                [19.9283, 75.3093],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_2646cc8a8ddc2700568bb95bef813cc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79dede8148ea724c53b088d0d6551b27 = $(`<div id="html_79dede8148ea724c53b088d0d6551b27" style="width: 100.0%; height: 100.0%;">Vehicle 2 Exit: Aurangabad Toll, Toll: ₹61.00, Speed: 75.56 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_2646cc8a8ddc2700568bb95bef813cc7.setContent(html_79dede8148ea724c53b088d0d6551b27);
+            
+        
+
+        marker_0709f1f010969c66bd2758f57f7fe935.bindPopup(popup_2646cc8a8ddc2700568bb95bef813cc7)
+        ;
+
+        
+    
+    
+            var marker_acce4c7daa7dbfabfd204ec0fe851b57 = L.marker(
+                [19.9975, 73.7898],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_43ec932b62403ced359a9938c0539fa2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70db723add9dfac745dad068127291fe = $(`<div id="html_70db723add9dfac745dad068127291fe" style="width: 100.0%; height: 100.0%;">Vehicle 2 Entry: Nashik Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_43ec932b62403ced359a9938c0539fa2.setContent(html_70db723add9dfac745dad068127291fe);
+            
+        
+
+        marker_acce4c7daa7dbfabfd204ec0fe851b57.bindPopup(popup_43ec932b62403ced359a9938c0539fa2)
+        ;
+
+        
+    
+    
+            var marker_2b877629c3076a777e7bc0843e5a1a02 = L.marker(
+                [20.011, 73.7802],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_12e6cba728fd8973af2ca69d446cde54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb4737bc461be4f1179a784e11a7525e = $(`<div id="html_bb4737bc461be4f1179a784e11a7525e" style="width: 100.0%; height: 100.0%;">Vehicle 2 Exit: Nashik Toll, Toll: ₹12.61, Speed: 45.19 km/h</div>`)[0];
+                popup_12e6cba728fd8973af2ca69d446cde54.setContent(html_bb4737bc461be4f1179a784e11a7525e);
+            
+        
+
+        marker_2b877629c3076a777e7bc0843e5a1a02.bindPopup(popup_12e6cba728fd8973af2ca69d446cde54)
+        ;
+
+        
+    
+    
+            var marker_0ce164a11e4b13cef8ac36a12308bc03 = L.marker(
+                [20.011, 73.7802],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_9c7583c4bbf5a32c907d9241ac19e695 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35bf84e82c06ca2c3e4e542cd23d2163 = $(`<div id="html_35bf84e82c06ca2c3e4e542cd23d2163" style="width: 100.0%; height: 100.0%;">Vehicle 2 (truck), Total Toll: ₹1190.31</div>`)[0];
+                popup_9c7583c4bbf5a32c907d9241ac19e695.setContent(html_35bf84e82c06ca2c3e4e542cd23d2163);
+            
+        
+
+        marker_0ce164a11e4b13cef8ac36a12308bc03.bindPopup(popup_9c7583c4bbf5a32c907d9241ac19e695)
+        ;
+
+        
+    
+    
+            var marker_77356d766e1407646c93c700cb1904f5 = L.marker(
+                [19.9975, 73.7898],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_dab3897b8d4e451ad678ebf00e8adc87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3706c4779b08da95b62b5934ee3e2e5e = $(`<div id="html_3706c4779b08da95b62b5934ee3e2e5e" style="width: 100.0%; height: 100.0%;">Vehicle 3 Entry: Nashik Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_dab3897b8d4e451ad678ebf00e8adc87.setContent(html_3706c4779b08da95b62b5934ee3e2e5e);
+            
+        
+
+        marker_77356d766e1407646c93c700cb1904f5.bindPopup(popup_dab3897b8d4e451ad678ebf00e8adc87)
+        ;
+
+        
+    
+    
+            var marker_4e26246f7fa4ca564a17d454823d6583 = L.marker(
+                [20.011, 73.7802],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_b942f876f4b2955fb8ca3936c5011113 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea7b9136da894cfb055bf06492c131fe = $(`<div id="html_ea7b9136da894cfb055bf06492c131fe" style="width: 100.0%; height: 100.0%;">Vehicle 3 Exit: Nashik Toll, Toll: ₹6.30, Speed: 74.49 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_b942f876f4b2955fb8ca3936c5011113.setContent(html_ea7b9136da894cfb055bf06492c131fe);
+            
+        
+
+        marker_4e26246f7fa4ca564a17d454823d6583.bindPopup(popup_b942f876f4b2955fb8ca3936c5011113)
+        ;
+
+        
+    
+    
+            var marker_17debe80f811b8256eb17a11a1eb861e = L.marker(
+                [19.8762, 75.3433],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_6db6496fc157ba3d91172a14df42696b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36dfc3580c213018ffab3659917b4e56 = $(`<div id="html_36dfc3580c213018ffab3659917b4e56" style="width: 100.0%; height: 100.0%;">Vehicle 3 Entry: Aurangabad Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_6db6496fc157ba3d91172a14df42696b.setContent(html_36dfc3580c213018ffab3659917b4e56);
+            
+        
+
+        marker_17debe80f811b8256eb17a11a1eb861e.bindPopup(popup_6db6496fc157ba3d91172a14df42696b)
+        ;
+
+        
+    
+    
+            var marker_114c698e277af83e211b041bce6d5e4d = L.marker(
+                [19.9283, 75.3093],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_33ad77d860f40d8495924141eabb3aa8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a365d9f4afb442feee3e2c3d2d0ce2f6 = $(`<div id="html_a365d9f4afb442feee3e2c3d2d0ce2f6" style="width: 100.0%; height: 100.0%;">Vehicle 3 Exit: Aurangabad Toll, Toll: ₹30.50, Speed: 57.86 km/h</div>`)[0];
+                popup_33ad77d860f40d8495924141eabb3aa8.setContent(html_a365d9f4afb442feee3e2c3d2d0ce2f6);
+            
+        
+
+        marker_114c698e277af83e211b041bce6d5e4d.bindPopup(popup_33ad77d860f40d8495924141eabb3aa8)
+        ;
+
+        
+    
+    
+            var marker_69d75bc1d7fe79926c3b454fbefa2e7e = L.marker(
+                [19.9975, 73.7898],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_abadb7c0e4bc5bd5369c227347853683 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff8f544288418800a501a62da5eb3c6c = $(`<div id="html_ff8f544288418800a501a62da5eb3c6c" style="width: 100.0%; height: 100.0%;">Vehicle 3 Entry: Nashik Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_abadb7c0e4bc5bd5369c227347853683.setContent(html_ff8f544288418800a501a62da5eb3c6c);
+            
+        
+
+        marker_69d75bc1d7fe79926c3b454fbefa2e7e.bindPopup(popup_abadb7c0e4bc5bd5369c227347853683)
+        ;
+
+        
+    
+    
+            var marker_e393906c9638a541af46913366cae151 = L.marker(
+                [20.011, 73.7802],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_139583f1d21a2656ea41e9dba72c4a89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c73671950616a974fe3786592f7bef3a = $(`<div id="html_c73671950616a974fe3786592f7bef3a" style="width: 100.0%; height: 100.0%;">Vehicle 3 Exit: Nashik Toll, Toll: ₹6.30, Speed: 73.64 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_139583f1d21a2656ea41e9dba72c4a89.setContent(html_c73671950616a974fe3786592f7bef3a);
+            
+        
+
+        marker_e393906c9638a541af46913366cae151.bindPopup(popup_139583f1d21a2656ea41e9dba72c4a89)
+        ;
+
+        
+    
+    
+            var marker_4bb430e47f455e750b60ff98971bb855 = L.marker(
+                [19.9975, 73.7898],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_03a195b25c949093db043b859b39d90f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3a1306979084e8522b3928434a20742 = $(`<div id="html_a3a1306979084e8522b3928434a20742" style="width: 100.0%; height: 100.0%;">Vehicle 3 Entry: Nashik Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_03a195b25c949093db043b859b39d90f.setContent(html_a3a1306979084e8522b3928434a20742);
+            
+        
+
+        marker_4bb430e47f455e750b60ff98971bb855.bindPopup(popup_03a195b25c949093db043b859b39d90f)
+        ;
+
+        
+    
+    
+            var marker_2aeab048c35a2403df307da343e33d96 = L.marker(
+                [20.011, 73.7802],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_bf414d00e85f8b77fe8f80fbf3c1e040 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4795c5b528f1b7e11cd1da13c9e54363 = $(`<div id="html_4795c5b528f1b7e11cd1da13c9e54363" style="width: 100.0%; height: 100.0%;">Vehicle 3 Exit: Nashik Toll, Toll: ₹6.30, Speed: 52.93 km/h</div>`)[0];
+                popup_bf414d00e85f8b77fe8f80fbf3c1e040.setContent(html_4795c5b528f1b7e11cd1da13c9e54363);
+            
+        
+
+        marker_2aeab048c35a2403df307da343e33d96.bindPopup(popup_bf414d00e85f8b77fe8f80fbf3c1e040)
+        ;
+
+        
+    
+    
+            var marker_02a2aa706a0f1c9447c4e0120a583c19 = L.marker(
+                [19.076, 72.8777],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_36bec8b7a6789464d865ed2cedde96dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_314704b01c3f460c1ff5c5aacfa83120 = $(`<div id="html_314704b01c3f460c1ff5c5aacfa83120" style="width: 100.0%; height: 100.0%;">Vehicle 3 Entry: Mumbai Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_36bec8b7a6789464d865ed2cedde96dd.setContent(html_314704b01c3f460c1ff5c5aacfa83120);
+            
+        
+
+        marker_02a2aa706a0f1c9447c4e0120a583c19.bindPopup(popup_36bec8b7a6789464d865ed2cedde96dd)
+        ;
+
+        
+    
+    
+            var marker_7ec12c8c3bd6df7f849be06cb8f842d3 = L.marker(
+                [19.2183, 73.1527],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_64878e5f8e84edb077baee4313793670 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f287fc7de34fc102decc10195e59cf5 = $(`<div id="html_9f287fc7de34fc102decc10195e59cf5" style="width: 100.0%; height: 100.0%;">Vehicle 3 Exit: Mumbai Toll, Toll: ₹164.70, Speed: 63.85 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_64878e5f8e84edb077baee4313793670.setContent(html_9f287fc7de34fc102decc10195e59cf5);
+            
+        
+
+        marker_7ec12c8c3bd6df7f849be06cb8f842d3.bindPopup(popup_64878e5f8e84edb077baee4313793670)
+        ;
+
+        
+    
+    
+            var marker_fba5e322466d68047ef1c282547b6575 = L.marker(
+                [19.8762, 75.3433],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_c03bb1fb2e96ca4eb6c2f7aca6b949cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4730ee8d365b79c2c9772d38ffd2b35 = $(`<div id="html_e4730ee8d365b79c2c9772d38ffd2b35" style="width: 100.0%; height: 100.0%;">Vehicle 3 Entry: Aurangabad Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_c03bb1fb2e96ca4eb6c2f7aca6b949cb.setContent(html_e4730ee8d365b79c2c9772d38ffd2b35);
+            
+        
+
+        marker_fba5e322466d68047ef1c282547b6575.bindPopup(popup_c03bb1fb2e96ca4eb6c2f7aca6b949cb)
+        ;
+
+        
+    
+    
+            var marker_865ccb6df85db01618122171ffa0eebe = L.marker(
+                [19.9283, 75.3093],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_4f7f593c9032f22407716255dc4b310c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_401e5f4562edbeb6e68c0e22061f68b7 = $(`<div id="html_401e5f4562edbeb6e68c0e22061f68b7" style="width: 100.0%; height: 100.0%;">Vehicle 3 Exit: Aurangabad Toll, Toll: ₹30.50, Speed: 66.79 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_4f7f593c9032f22407716255dc4b310c.setContent(html_401e5f4562edbeb6e68c0e22061f68b7);
+            
+        
+
+        marker_865ccb6df85db01618122171ffa0eebe.bindPopup(popup_4f7f593c9032f22407716255dc4b310c)
+        ;
+
+        
+    
+    
+            var marker_5d4b9411fe2af8259b4aa8386192b9b1 = L.marker(
+                [21.1458, 79.0882],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_984655efe4f3ff8ec37231ba136eac2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d35fec6d55fcd7585e094eb49b06b0e = $(`<div id="html_4d35fec6d55fcd7585e094eb49b06b0e" style="width: 100.0%; height: 100.0%;">Vehicle 3 Entry: Nagpur Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_984655efe4f3ff8ec37231ba136eac2a.setContent(html_4d35fec6d55fcd7585e094eb49b06b0e);
+            
+        
+
+        marker_5d4b9411fe2af8259b4aa8386192b9b1.bindPopup(popup_984655efe4f3ff8ec37231ba136eac2a)
+        ;
+
+        
+    
+    
+            var marker_c736e1bb9ad99109d8e3c0979bc8d3b1 = L.marker(
+                [21.2514, 79.1575],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_7c3e8d8a16bd9da386854fdb17704d4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ee0f83995ffaf8f445a41f8ec65e2fd = $(`<div id="html_3ee0f83995ffaf8f445a41f8ec65e2fd" style="width: 100.0%; height: 100.0%;">Vehicle 3 Exit: Nagpur Toll, Toll: ₹82.37, Speed: 82.43 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_7c3e8d8a16bd9da386854fdb17704d4c.setContent(html_3ee0f83995ffaf8f445a41f8ec65e2fd);
+            
+        
+
+        marker_c736e1bb9ad99109d8e3c0979bc8d3b1.bindPopup(popup_7c3e8d8a16bd9da386854fdb17704d4c)
+        ;
+
+        
+    
+    
+            var marker_1d9f7b681622fe774d0e98debb6b5850 = L.marker(
+                [19.076, 72.8777],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_b3382638052a1c49042079a279b38009 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b83092d0cd6afd7aa4f3c06ccfd731a6 = $(`<div id="html_b83092d0cd6afd7aa4f3c06ccfd731a6" style="width: 100.0%; height: 100.0%;">Vehicle 3 Entry: Mumbai Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_b3382638052a1c49042079a279b38009.setContent(html_b83092d0cd6afd7aa4f3c06ccfd731a6);
+            
+        
+
+        marker_1d9f7b681622fe774d0e98debb6b5850.bindPopup(popup_b3382638052a1c49042079a279b38009)
+        ;
+
+        
+    
+    
+            var marker_b989b5e99ef55ee12fbff24690b13084 = L.marker(
+                [19.2183, 73.1527],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_c7d46405f263c01fd9d21659d7c1c0ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52202734e860706d45c68232cfd3cafd = $(`<div id="html_52202734e860706d45c68232cfd3cafd" style="width: 100.0%; height: 100.0%;">Vehicle 3 Exit: Mumbai Toll, Toll: ₹164.70, Speed: 73.28 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_c7d46405f263c01fd9d21659d7c1c0ea.setContent(html_52202734e860706d45c68232cfd3cafd);
+            
+        
+
+        marker_b989b5e99ef55ee12fbff24690b13084.bindPopup(popup_c7d46405f263c01fd9d21659d7c1c0ea)
+        ;
+
+        
+    
+    
+            var marker_1c4a2cb4d838f750532ba92f86614afc = L.marker(
+                [18.5204, 73.8567],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_8e01c20e6bfd1ffedc19b3b294709f66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5443ac2551d75549dadb5575e58685e5 = $(`<div id="html_5443ac2551d75549dadb5575e58685e5" style="width: 100.0%; height: 100.0%;">Vehicle 3 Entry: Pune Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_8e01c20e6bfd1ffedc19b3b294709f66.setContent(html_5443ac2551d75549dadb5575e58685e5);
+            
+        
+
+        marker_1c4a2cb4d838f750532ba92f86614afc.bindPopup(popup_8e01c20e6bfd1ffedc19b3b294709f66)
+        ;
+
+        
+    
+    
+            var marker_ee77e196b872eeec8c1e25520371457b = L.marker(
+                [18.6298, 73.7997],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_2c3da59ff2c7121062c3d3725e05868b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9702c5dafd789f08586060dad05fca1 = $(`<div id="html_c9702c5dafd789f08586060dad05fca1" style="width: 100.0%; height: 100.0%;">Vehicle 3 Exit: Pune Toll, Toll: ₹54.09, Speed: 69.33 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_2c3da59ff2c7121062c3d3725e05868b.setContent(html_c9702c5dafd789f08586060dad05fca1);
+            
+        
+
+        marker_ee77e196b872eeec8c1e25520371457b.bindPopup(popup_2c3da59ff2c7121062c3d3725e05868b)
+        ;
+
+        
+    
+    
+            var marker_d3398cfd909970dbaa6cc4160b347ffa = L.marker(
+                [19.9975, 73.7898],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_d20314e46507a73c468a567724edd1da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7836f8d5955796e8c83bd88d3c6231cc = $(`<div id="html_7836f8d5955796e8c83bd88d3c6231cc" style="width: 100.0%; height: 100.0%;">Vehicle 3 Entry: Nashik Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_d20314e46507a73c468a567724edd1da.setContent(html_7836f8d5955796e8c83bd88d3c6231cc);
+            
+        
+
+        marker_d3398cfd909970dbaa6cc4160b347ffa.bindPopup(popup_d20314e46507a73c468a567724edd1da)
+        ;
+
+        
+    
+    
+            var marker_396018196269f9ff73c8a2089ccb5150 = L.marker(
+                [20.011, 73.7802],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_c2fea7de18f9662822bc19f819548a53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79c0c4963e3dbb3a174f09eee25c99bf = $(`<div id="html_79c0c4963e3dbb3a174f09eee25c99bf" style="width: 100.0%; height: 100.0%;">Vehicle 3 Exit: Nashik Toll, Toll: ₹6.30, Speed: 54.27 km/h</div>`)[0];
+                popup_c2fea7de18f9662822bc19f819548a53.setContent(html_79c0c4963e3dbb3a174f09eee25c99bf);
+            
+        
+
+        marker_396018196269f9ff73c8a2089ccb5150.bindPopup(popup_c2fea7de18f9662822bc19f819548a53)
+        ;
+
+        
+    
+    
+            var marker_448dbeba9cb4a6e1e85e73b7ba392a2c = L.marker(
+                [20.011, 73.7802],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_18f883efc63b3a82dabfcbf1fe28817b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6671f1b363960b20add96d686f91e40b = $(`<div id="html_6671f1b363960b20add96d686f91e40b" style="width: 100.0%; height: 100.0%;">Vehicle 3 (car), Total Toll: ₹552.07</div>`)[0];
+                popup_18f883efc63b3a82dabfcbf1fe28817b.setContent(html_6671f1b363960b20add96d686f91e40b);
+            
+        
+
+        marker_448dbeba9cb4a6e1e85e73b7ba392a2c.bindPopup(popup_18f883efc63b3a82dabfcbf1fe28817b)
+        ;
+
+        
+    
+    
+            var marker_1bdec2d182a2a36c6e737a395bfbe1eb = L.marker(
+                [18.5204, 73.8567],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_0c1ab5c6497045fad905e14da0aefd62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_665f526199fdcaf0cfffc7cc9a4ac2d1 = $(`<div id="html_665f526199fdcaf0cfffc7cc9a4ac2d1" style="width: 100.0%; height: 100.0%;">Vehicle 4 Entry: Pune Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_0c1ab5c6497045fad905e14da0aefd62.setContent(html_665f526199fdcaf0cfffc7cc9a4ac2d1);
+            
+        
+
+        marker_1bdec2d182a2a36c6e737a395bfbe1eb.bindPopup(popup_0c1ab5c6497045fad905e14da0aefd62)
+        ;
+
+        
+    
+    
+            var marker_853c29dcd7adacd8c1541b53531cb5f7 = L.marker(
+                [18.6298, 73.7997],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_7fe047759aca6c14bd04081b41f6ccb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7afbc75ad7f58226a19d61432ac74ce5 = $(`<div id="html_7afbc75ad7f58226a19d61432ac74ce5" style="width: 100.0%; height: 100.0%;">Vehicle 4 Exit: Pune Toll, Toll: ₹108.17, Speed: 57.04 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_7fe047759aca6c14bd04081b41f6ccb6.setContent(html_7afbc75ad7f58226a19d61432ac74ce5);
+            
+        
+
+        marker_853c29dcd7adacd8c1541b53531cb5f7.bindPopup(popup_7fe047759aca6c14bd04081b41f6ccb6)
+        ;
+
+        
+    
+    
+            var marker_c8f0342fc7866456eadb1350b46695f2 = L.marker(
+                [19.8762, 75.3433],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_656bebf6f865c6691d91c50fad3a7164 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc993220e9c96d88df17b7543faa28b1 = $(`<div id="html_dc993220e9c96d88df17b7543faa28b1" style="width: 100.0%; height: 100.0%;">Vehicle 4 Entry: Aurangabad Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_656bebf6f865c6691d91c50fad3a7164.setContent(html_dc993220e9c96d88df17b7543faa28b1);
+            
+        
+
+        marker_c8f0342fc7866456eadb1350b46695f2.bindPopup(popup_656bebf6f865c6691d91c50fad3a7164)
+        ;
+
+        
+    
+    
+            var marker_6ebf5eba8a243c8c5627688c7d834c0f = L.marker(
+                [19.9283, 75.3093],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_92f4825b70745fb10baa1ded90ca0f22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf332e6be3b009f81907d3c0c895b108 = $(`<div id="html_bf332e6be3b009f81907d3c0c895b108" style="width: 100.0%; height: 100.0%;">Vehicle 4 Exit: Aurangabad Toll, Toll: ₹61.00, Speed: 62.86 km/h</div>`)[0];
+                popup_92f4825b70745fb10baa1ded90ca0f22.setContent(html_bf332e6be3b009f81907d3c0c895b108);
+            
+        
+
+        marker_6ebf5eba8a243c8c5627688c7d834c0f.bindPopup(popup_92f4825b70745fb10baa1ded90ca0f22)
+        ;
+
+        
+    
+    
+            var marker_8e6f4e0914de03f3f370138589d93219 = L.marker(
+                [19.076, 72.8777],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_5129529448027e5c64415664518de2a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7be47afbcf1f26933e886aa3054b9bc0 = $(`<div id="html_7be47afbcf1f26933e886aa3054b9bc0" style="width: 100.0%; height: 100.0%;">Vehicle 4 Entry: Mumbai Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_5129529448027e5c64415664518de2a3.setContent(html_7be47afbcf1f26933e886aa3054b9bc0);
+            
+        
+
+        marker_8e6f4e0914de03f3f370138589d93219.bindPopup(popup_5129529448027e5c64415664518de2a3)
+        ;
+
+        
+    
+    
+            var marker_ae87198e865017132ecfe5bec001c229 = L.marker(
+                [19.2183, 73.1527],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_6d0c75d53eb245e0d996c96178a766da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70baec5a61d6d823daa77a610d51998f = $(`<div id="html_70baec5a61d6d823daa77a610d51998f" style="width: 100.0%; height: 100.0%;">Vehicle 4 Exit: Mumbai Toll, Toll: ₹329.40, Speed: 62.48 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_6d0c75d53eb245e0d996c96178a766da.setContent(html_70baec5a61d6d823daa77a610d51998f);
+            
+        
+
+        marker_ae87198e865017132ecfe5bec001c229.bindPopup(popup_6d0c75d53eb245e0d996c96178a766da)
+        ;
+
+        
+    
+    
+            var marker_526b28caf298be970fa3b5864b6bf371 = L.marker(
+                [21.1458, 79.0882],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_002d1266fcadcb415fc921fba0c2f161 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_687e92987e1517b7eb554f5d971f9edb = $(`<div id="html_687e92987e1517b7eb554f5d971f9edb" style="width: 100.0%; height: 100.0%;">Vehicle 4 Entry: Nagpur Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_002d1266fcadcb415fc921fba0c2f161.setContent(html_687e92987e1517b7eb554f5d971f9edb);
+            
+        
+
+        marker_526b28caf298be970fa3b5864b6bf371.bindPopup(popup_002d1266fcadcb415fc921fba0c2f161)
+        ;
+
+        
+    
+    
+            var marker_5a2592aad7c3e276e3ed975277f019e2 = L.marker(
+                [21.2514, 79.1575],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_28c7fb637bce1ab3123a51447872b35e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8988447864324d0dd301cd2fe185521a = $(`<div id="html_8988447864324d0dd301cd2fe185521a" style="width: 100.0%; height: 100.0%;">Vehicle 4 Exit: Nagpur Toll, Toll: ₹164.75, Speed: 67.50 km/h</div>`)[0];
+                popup_28c7fb637bce1ab3123a51447872b35e.setContent(html_8988447864324d0dd301cd2fe185521a);
+            
+        
+
+        marker_5a2592aad7c3e276e3ed975277f019e2.bindPopup(popup_28c7fb637bce1ab3123a51447872b35e)
+        ;
+
+        
+    
+    
+            var marker_0b1debbdfde744ecb3f72dc9de18b15b = L.marker(
+                [18.5204, 73.8567],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_89bdee0dbe7530b614ab849be93e77b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59fa57c05c56a3626165a57e69c236b9 = $(`<div id="html_59fa57c05c56a3626165a57e69c236b9" style="width: 100.0%; height: 100.0%;">Vehicle 4 Entry: Pune Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_89bdee0dbe7530b614ab849be93e77b7.setContent(html_59fa57c05c56a3626165a57e69c236b9);
+            
+        
+
+        marker_0b1debbdfde744ecb3f72dc9de18b15b.bindPopup(popup_89bdee0dbe7530b614ab849be93e77b7)
+        ;
+
+        
+    
+    
+            var marker_7c8f345775503ca33291e7e543b5c13f = L.marker(
+                [18.6298, 73.7997],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_e3e327ac8ec8644f4e7bfea7a401ac62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc629fca0f331250d252f2462726b0b0 = $(`<div id="html_fc629fca0f331250d252f2462726b0b0" style="width: 100.0%; height: 100.0%;">Vehicle 4 Exit: Pune Toll, Toll: ₹108.17, Speed: 54.31 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_e3e327ac8ec8644f4e7bfea7a401ac62.setContent(html_fc629fca0f331250d252f2462726b0b0);
+            
+        
+
+        marker_7c8f345775503ca33291e7e543b5c13f.bindPopup(popup_e3e327ac8ec8644f4e7bfea7a401ac62)
+        ;
+
+        
+    
+    
+            var marker_602968031758b2f64dc29befd48f6822 = L.marker(
+                [19.076, 72.8777],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_08c963e82e78c7e574b7442ec1cccf80 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac139d25ec726d27cccc3140a0b0b5f7 = $(`<div id="html_ac139d25ec726d27cccc3140a0b0b5f7" style="width: 100.0%; height: 100.0%;">Vehicle 4 Entry: Mumbai Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_08c963e82e78c7e574b7442ec1cccf80.setContent(html_ac139d25ec726d27cccc3140a0b0b5f7);
+            
+        
+
+        marker_602968031758b2f64dc29befd48f6822.bindPopup(popup_08c963e82e78c7e574b7442ec1cccf80)
+        ;
+
+        
+    
+    
+            var marker_e9758a6ab68b3bf2a8efd1e1ddc82c8c = L.marker(
+                [19.2183, 73.1527],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_8fe775b4a41a14133b94d623264058bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48fd95890b7497e2e8baccf3e4c96ded = $(`<div id="html_48fd95890b7497e2e8baccf3e4c96ded" style="width: 100.0%; height: 100.0%;">Vehicle 4 Exit: Mumbai Toll, Toll: ₹329.40, Speed: 53.95 km/h</div>`)[0];
+                popup_8fe775b4a41a14133b94d623264058bc.setContent(html_48fd95890b7497e2e8baccf3e4c96ded);
+            
+        
+
+        marker_e9758a6ab68b3bf2a8efd1e1ddc82c8c.bindPopup(popup_8fe775b4a41a14133b94d623264058bc)
+        ;
+
+        
+    
+    
+            var marker_2660f93878e194539723dc037ff3ac5f = L.marker(
+                [21.1458, 79.0882],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_419a8b3149d81df55d91e43c0bb06868 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e1cd9d9820ceb48e4876d3f26f26035 = $(`<div id="html_6e1cd9d9820ceb48e4876d3f26f26035" style="width: 100.0%; height: 100.0%;">Vehicle 4 Entry: Nagpur Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_419a8b3149d81df55d91e43c0bb06868.setContent(html_6e1cd9d9820ceb48e4876d3f26f26035);
+            
+        
+
+        marker_2660f93878e194539723dc037ff3ac5f.bindPopup(popup_419a8b3149d81df55d91e43c0bb06868)
+        ;
+
+        
+    
+    
+            var marker_4ee52dace3a1b7c49305fed170496023 = L.marker(
+                [21.2514, 79.1575],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_1a0291208180635fa0fd447f36d9a054 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36a5d8fd658d4ea3770dd9c80b344c52 = $(`<div id="html_36a5d8fd658d4ea3770dd9c80b344c52" style="width: 100.0%; height: 100.0%;">Vehicle 4 Exit: Nagpur Toll, Toll: ₹164.75, Speed: 82.31 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_1a0291208180635fa0fd447f36d9a054.setContent(html_36a5d8fd658d4ea3770dd9c80b344c52);
+            
+        
+
+        marker_4ee52dace3a1b7c49305fed170496023.bindPopup(popup_1a0291208180635fa0fd447f36d9a054)
+        ;
+
+        
+    
+    
+            var marker_cd7b2e1f64a88d1f91d3a618b72d08ad = L.marker(
+                [21.1458, 79.0882],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_1965d576dcd50321d0a05085889b180f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25799e337d8281a1d8c952c6b9b02114 = $(`<div id="html_25799e337d8281a1d8c952c6b9b02114" style="width: 100.0%; height: 100.0%;">Vehicle 4 Entry: Nagpur Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_1965d576dcd50321d0a05085889b180f.setContent(html_25799e337d8281a1d8c952c6b9b02114);
+            
+        
+
+        marker_cd7b2e1f64a88d1f91d3a618b72d08ad.bindPopup(popup_1965d576dcd50321d0a05085889b180f)
+        ;
+
+        
+    
+    
+            var marker_45e6241a5b8a77b91a6c4b055c14f3a4 = L.marker(
+                [21.2514, 79.1575],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_8a46a4e74d6f400afa287ead5e06000f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc342724d3f1574eccacee68999fa7fc = $(`<div id="html_bc342724d3f1574eccacee68999fa7fc" style="width: 100.0%; height: 100.0%;">Vehicle 4 Exit: Nagpur Toll, Toll: ₹164.75, Speed: 63.89 km/h</div>`)[0];
+                popup_8a46a4e74d6f400afa287ead5e06000f.setContent(html_bc342724d3f1574eccacee68999fa7fc);
+            
+        
+
+        marker_45e6241a5b8a77b91a6c4b055c14f3a4.bindPopup(popup_8a46a4e74d6f400afa287ead5e06000f)
+        ;
+
+        
+    
+    
+            var marker_3d8f79e39eee546f664dea0f244e6ad8 = L.marker(
+                [21.1458, 79.0882],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_ff3564300c001781f992d07ca1d341ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ab8d2f379b72777e1392b5bb71a33a2 = $(`<div id="html_0ab8d2f379b72777e1392b5bb71a33a2" style="width: 100.0%; height: 100.0%;">Vehicle 4 Entry: Nagpur Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_ff3564300c001781f992d07ca1d341ba.setContent(html_0ab8d2f379b72777e1392b5bb71a33a2);
+            
+        
+
+        marker_3d8f79e39eee546f664dea0f244e6ad8.bindPopup(popup_ff3564300c001781f992d07ca1d341ba)
+        ;
+
+        
+    
+    
+            var marker_cd98659247c31418f68f37d0eb55520b = L.marker(
+                [21.2514, 79.1575],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_b0ebb107578b7a589446e04ca162a02a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71bb3b023e9ea7aeecdddf543a5466c8 = $(`<div id="html_71bb3b023e9ea7aeecdddf543a5466c8" style="width: 100.0%; height: 100.0%;">Vehicle 4 Exit: Nagpur Toll, Toll: ₹164.75, Speed: 86.81 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_b0ebb107578b7a589446e04ca162a02a.setContent(html_71bb3b023e9ea7aeecdddf543a5466c8);
+            
+        
+
+        marker_cd98659247c31418f68f37d0eb55520b.bindPopup(popup_b0ebb107578b7a589446e04ca162a02a)
+        ;
+
+        
+    
+    
+            var marker_6364b457ce8d02bd5209b6a660d0bf83 = L.marker(
+                [19.076, 72.8777],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_3923c55d8ec7ddd07b5d54207201c81f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af665ee507a887c105aa403c3fcc006c = $(`<div id="html_af665ee507a887c105aa403c3fcc006c" style="width: 100.0%; height: 100.0%;">Vehicle 4 Entry: Mumbai Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_3923c55d8ec7ddd07b5d54207201c81f.setContent(html_af665ee507a887c105aa403c3fcc006c);
+            
+        
+
+        marker_6364b457ce8d02bd5209b6a660d0bf83.bindPopup(popup_3923c55d8ec7ddd07b5d54207201c81f)
+        ;
+
+        
+    
+    
+            var marker_f2ea9e08a52b64ef5e4c93be8b5830ec = L.marker(
+                [19.2183, 73.1527],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_2a0ba8c927f2822ce634a092a6ab378e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3cd9a9505f2c79bbdf9b838c1012cfc1 = $(`<div id="html_3cd9a9505f2c79bbdf9b838c1012cfc1" style="width: 100.0%; height: 100.0%;">Vehicle 4 Exit: Mumbai Toll, Toll: ₹329.40, Speed: 60.94 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_2a0ba8c927f2822ce634a092a6ab378e.setContent(html_3cd9a9505f2c79bbdf9b838c1012cfc1);
+            
+        
+
+        marker_f2ea9e08a52b64ef5e4c93be8b5830ec.bindPopup(popup_2a0ba8c927f2822ce634a092a6ab378e)
+        ;
+
+        
+    
+    
+            var marker_f9a85f255e94c32090e6f8ac3146fcd5 = L.marker(
+                [19.2183, 73.1527],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_d8177013b3d8dbdce359796e0e172cbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a62d33cbe7819cb4f8b4725cdfd6c17 = $(`<div id="html_5a62d33cbe7819cb4f8b4725cdfd6c17" style="width: 100.0%; height: 100.0%;">Vehicle 4 (truck), Total Toll: ₹1924.53</div>`)[0];
+                popup_d8177013b3d8dbdce359796e0e172cbe.setContent(html_5a62d33cbe7819cb4f8b4725cdfd6c17);
+            
+        
+
+        marker_f9a85f255e94c32090e6f8ac3146fcd5.bindPopup(popup_d8177013b3d8dbdce359796e0e172cbe)
+        ;
+
+        
+    
+    
+            var marker_4703b61ad03f4de5182328be67d11bd4 = L.marker(
+                [19.9975, 73.7898],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_8e1011831aae70866efb3329f7f370b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0b060630f1f420f376b4091b8c2cd02 = $(`<div id="html_c0b060630f1f420f376b4091b8c2cd02" style="width: 100.0%; height: 100.0%;">Vehicle 5 Entry: Nashik Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_8e1011831aae70866efb3329f7f370b1.setContent(html_c0b060630f1f420f376b4091b8c2cd02);
+            
+        
+
+        marker_4703b61ad03f4de5182328be67d11bd4.bindPopup(popup_8e1011831aae70866efb3329f7f370b1)
+        ;
+
+        
+    
+    
+            var marker_c31f5addc5c6c3a2223d141cac3238cb = L.marker(
+                [20.011, 73.7802],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_4138ec3747ce4474d2db138ae530e1d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e22f7e4d3ee869390924ce437f1d0230 = $(`<div id="html_e22f7e4d3ee869390924ce437f1d0230" style="width: 100.0%; height: 100.0%;">Vehicle 5 Exit: Nashik Toll, Toll: ₹6.30, Speed: 63.23 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_4138ec3747ce4474d2db138ae530e1d0.setContent(html_e22f7e4d3ee869390924ce437f1d0230);
+            
+        
+
+        marker_c31f5addc5c6c3a2223d141cac3238cb.bindPopup(popup_4138ec3747ce4474d2db138ae530e1d0)
+        ;
+
+        
+    
+    
+            var marker_25d29ce30c032b4662261ffb3cd6a44f = L.marker(
+                [19.9975, 73.7898],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_c27a9591f4c45faecfbb646ee84fe7eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d078841b669a9d460d3931bfbcdcdb98 = $(`<div id="html_d078841b669a9d460d3931bfbcdcdb98" style="width: 100.0%; height: 100.0%;">Vehicle 5 Entry: Nashik Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_c27a9591f4c45faecfbb646ee84fe7eb.setContent(html_d078841b669a9d460d3931bfbcdcdb98);
+            
+        
+
+        marker_25d29ce30c032b4662261ffb3cd6a44f.bindPopup(popup_c27a9591f4c45faecfbb646ee84fe7eb)
+        ;
+
+        
+    
+    
+            var marker_a00b40e0924fe11fdb887c6cb491f960 = L.marker(
+                [20.011, 73.7802],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_60b9bcc3447c6239aa153029dc907faa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08e44450319109537761672a07838590 = $(`<div id="html_08e44450319109537761672a07838590" style="width: 100.0%; height: 100.0%;">Vehicle 5 Exit: Nashik Toll, Toll: ₹6.30, Speed: 48.75 km/h</div>`)[0];
+                popup_60b9bcc3447c6239aa153029dc907faa.setContent(html_08e44450319109537761672a07838590);
+            
+        
+
+        marker_a00b40e0924fe11fdb887c6cb491f960.bindPopup(popup_60b9bcc3447c6239aa153029dc907faa)
+        ;
+
+        
+    
+    
+            var marker_c5cd08b06d7f8e7aa3f1c79787cc4cbb = L.marker(
+                [19.076, 72.8777],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_bacb50afb65429ec01207842f022b513 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0812882c9511c8f81fd51227bf3613cc = $(`<div id="html_0812882c9511c8f81fd51227bf3613cc" style="width: 100.0%; height: 100.0%;">Vehicle 5 Entry: Mumbai Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_bacb50afb65429ec01207842f022b513.setContent(html_0812882c9511c8f81fd51227bf3613cc);
+            
+        
+
+        marker_c5cd08b06d7f8e7aa3f1c79787cc4cbb.bindPopup(popup_bacb50afb65429ec01207842f022b513)
+        ;
+
+        
+    
+    
+            var marker_d3aea84c1dc29ade0d85b71b91d9d2a9 = L.marker(
+                [19.2183, 73.1527],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_209befc55b65874dc91d3e5f1796b89b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1d48c47a787668ef7ae0b33aaa83da2 = $(`<div id="html_e1d48c47a787668ef7ae0b33aaa83da2" style="width: 100.0%; height: 100.0%;">Vehicle 5 Exit: Mumbai Toll, Toll: ₹164.70, Speed: 60.03 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_209befc55b65874dc91d3e5f1796b89b.setContent(html_e1d48c47a787668ef7ae0b33aaa83da2);
+            
+        
+
+        marker_d3aea84c1dc29ade0d85b71b91d9d2a9.bindPopup(popup_209befc55b65874dc91d3e5f1796b89b)
+        ;
+
+        
+    
+    
+            var marker_6fd8054af14d9ec2f99d1d7fc2d419ed = L.marker(
+                [19.8762, 75.3433],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_d328a33da831e54fd339f695c0c4ae4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30b76ef3e0be23ff8fb11b665a9073d0 = $(`<div id="html_30b76ef3e0be23ff8fb11b665a9073d0" style="width: 100.0%; height: 100.0%;">Vehicle 5 Entry: Aurangabad Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_d328a33da831e54fd339f695c0c4ae4c.setContent(html_30b76ef3e0be23ff8fb11b665a9073d0);
+            
+        
+
+        marker_6fd8054af14d9ec2f99d1d7fc2d419ed.bindPopup(popup_d328a33da831e54fd339f695c0c4ae4c)
+        ;
+
+        
+    
+    
+            var marker_c6ef94b2647c25797bc0603475edf50d = L.marker(
+                [19.9283, 75.3093],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_a7f2643296102b3b4e8a74ed2c383162 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b17819c92df642d7c80411b806d40d8 = $(`<div id="html_7b17819c92df642d7c80411b806d40d8" style="width: 100.0%; height: 100.0%;">Vehicle 5 Exit: Aurangabad Toll, Toll: ₹30.50, Speed: 60.26 km/h</div>`)[0];
+                popup_a7f2643296102b3b4e8a74ed2c383162.setContent(html_7b17819c92df642d7c80411b806d40d8);
+            
+        
+
+        marker_c6ef94b2647c25797bc0603475edf50d.bindPopup(popup_a7f2643296102b3b4e8a74ed2c383162)
+        ;
+
+        
+    
+    
+            var marker_c820a155db78605bf26b59edc855e760 = L.marker(
+                [18.5204, 73.8567],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_f166b021456958b933ec65a96d87a94c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0be42d2b1beb838001e4d5fbe3d2e893 = $(`<div id="html_0be42d2b1beb838001e4d5fbe3d2e893" style="width: 100.0%; height: 100.0%;">Vehicle 5 Entry: Pune Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_f166b021456958b933ec65a96d87a94c.setContent(html_0be42d2b1beb838001e4d5fbe3d2e893);
+            
+        
+
+        marker_c820a155db78605bf26b59edc855e760.bindPopup(popup_f166b021456958b933ec65a96d87a94c)
+        ;
+
+        
+    
+    
+            var marker_9e5c66a0c36f5ace72c98e169714ff33 = L.marker(
+                [18.6298, 73.7997],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_a814aed4aa19bcb333e16f23ece042b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_281774b4ed237d39a693468cc16cf523 = $(`<div id="html_281774b4ed237d39a693468cc16cf523" style="width: 100.0%; height: 100.0%;">Vehicle 5 Exit: Pune Toll, Toll: ₹54.09, Speed: 63.10 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_a814aed4aa19bcb333e16f23ece042b1.setContent(html_281774b4ed237d39a693468cc16cf523);
+            
+        
+
+        marker_9e5c66a0c36f5ace72c98e169714ff33.bindPopup(popup_a814aed4aa19bcb333e16f23ece042b1)
+        ;
+
+        
+    
+    
+            var marker_2d61ba5ddc5005c1ed67b4bc6343a607 = L.marker(
+                [19.9975, 73.7898],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_e0f2266838aea1877d1e6b13789a8852 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aafa36b7508957093134d494e9c58c03 = $(`<div id="html_aafa36b7508957093134d494e9c58c03" style="width: 100.0%; height: 100.0%;">Vehicle 5 Entry: Nashik Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_e0f2266838aea1877d1e6b13789a8852.setContent(html_aafa36b7508957093134d494e9c58c03);
+            
+        
+
+        marker_2d61ba5ddc5005c1ed67b4bc6343a607.bindPopup(popup_e0f2266838aea1877d1e6b13789a8852)
+        ;
+
+        
+    
+    
+            var marker_e72062ded3b3afda446c98532a1defb1 = L.marker(
+                [20.011, 73.7802],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_1954d3ff2f9b63dd36e2ae0b79875751 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62842a430ef055b40c2223e9cdfea375 = $(`<div id="html_62842a430ef055b40c2223e9cdfea375" style="width: 100.0%; height: 100.0%;">Vehicle 5 Exit: Nashik Toll, Toll: ₹6.30, Speed: 52.92 km/h</div>`)[0];
+                popup_1954d3ff2f9b63dd36e2ae0b79875751.setContent(html_62842a430ef055b40c2223e9cdfea375);
+            
+        
+
+        marker_e72062ded3b3afda446c98532a1defb1.bindPopup(popup_1954d3ff2f9b63dd36e2ae0b79875751)
+        ;
+
+        
+    
+    
+            var marker_537e78918f9f2f51b5e189c9da6393ea = L.marker(
+                [19.9975, 73.7898],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_3c87199227afb7026f0527502a57299e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4e8ec2aa443e6ee51d88a5cb502ef6b = $(`<div id="html_f4e8ec2aa443e6ee51d88a5cb502ef6b" style="width: 100.0%; height: 100.0%;">Vehicle 5 Entry: Nashik Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_3c87199227afb7026f0527502a57299e.setContent(html_f4e8ec2aa443e6ee51d88a5cb502ef6b);
+            
+        
+
+        marker_537e78918f9f2f51b5e189c9da6393ea.bindPopup(popup_3c87199227afb7026f0527502a57299e)
+        ;
+
+        
+    
+    
+            var marker_7fb3cd6e97ead41e4f5169e0588ba5b1 = L.marker(
+                [20.011, 73.7802],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_c5e9762215798bcefb4efba765008470 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d70e0aea0028193afc45cca4cbb91299 = $(`<div id="html_d70e0aea0028193afc45cca4cbb91299" style="width: 100.0%; height: 100.0%;">Vehicle 5 Exit: Nashik Toll, Toll: ₹6.30, Speed: 55.39 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_c5e9762215798bcefb4efba765008470.setContent(html_d70e0aea0028193afc45cca4cbb91299);
+            
+        
+
+        marker_7fb3cd6e97ead41e4f5169e0588ba5b1.bindPopup(popup_c5e9762215798bcefb4efba765008470)
+        ;
+
+        
+    
+    
+            var marker_592d78bf3055c6ef04e672632d91fca5 = L.marker(
+                [19.076, 72.8777],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_b25251c9db9bec6e10794b137e2080a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01ec879b58606ba0b7fd04ecf94b2b50 = $(`<div id="html_01ec879b58606ba0b7fd04ecf94b2b50" style="width: 100.0%; height: 100.0%;">Vehicle 5 Entry: Mumbai Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_b25251c9db9bec6e10794b137e2080a6.setContent(html_01ec879b58606ba0b7fd04ecf94b2b50);
+            
+        
+
+        marker_592d78bf3055c6ef04e672632d91fca5.bindPopup(popup_b25251c9db9bec6e10794b137e2080a6)
+        ;
+
+        
+    
+    
+            var marker_56d3a12c6e9eae55e24a97529ee32d45 = L.marker(
+                [19.2183, 73.1527],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_c4809c7043b534bc9a0997837fd22519 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2451f0b84589bf5e288bfc514bc0aa07 = $(`<div id="html_2451f0b84589bf5e288bfc514bc0aa07" style="width: 100.0%; height: 100.0%;">Vehicle 5 Exit: Mumbai Toll, Toll: ₹164.70, Speed: 65.07 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_c4809c7043b534bc9a0997837fd22519.setContent(html_2451f0b84589bf5e288bfc514bc0aa07);
+            
+        
+
+        marker_56d3a12c6e9eae55e24a97529ee32d45.bindPopup(popup_c4809c7043b534bc9a0997837fd22519)
+        ;
+
+        
+    
+    
+            var marker_e74f1ecedeb8c38d499eab59367fe7c8 = L.marker(
+                [18.5204, 73.8567],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_a94ebe58aa398870da826fe6954c7385 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f197e4f5b496473b4ec222a6fda319a = $(`<div id="html_7f197e4f5b496473b4ec222a6fda319a" style="width: 100.0%; height: 100.0%;">Vehicle 5 Entry: Pune Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_a94ebe58aa398870da826fe6954c7385.setContent(html_7f197e4f5b496473b4ec222a6fda319a);
+            
+        
+
+        marker_e74f1ecedeb8c38d499eab59367fe7c8.bindPopup(popup_a94ebe58aa398870da826fe6954c7385)
+        ;
+
+        
+    
+    
+            var marker_fd7fb42291c6fac1e9eb41e970ac3e11 = L.marker(
+                [18.6298, 73.7997],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_05b499b072200f1a7f8e40d5316de31d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c41d3a150ca908b78d9306a79b7a8e0 = $(`<div id="html_4c41d3a150ca908b78d9306a79b7a8e0" style="width: 100.0%; height: 100.0%;">Vehicle 5 Exit: Pune Toll, Toll: ₹54.09, Speed: 66.29 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_05b499b072200f1a7f8e40d5316de31d.setContent(html_4c41d3a150ca908b78d9306a79b7a8e0);
+            
+        
+
+        marker_fd7fb42291c6fac1e9eb41e970ac3e11.bindPopup(popup_05b499b072200f1a7f8e40d5316de31d)
+        ;
+
+        
+    
+    
+            var marker_63ffb902db007f9ace6115d4b77db61a = L.marker(
+                [21.1458, 79.0882],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_9c687ae00ab841458b1e5a6224572b9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ad3d981e1bc6c263ba30eaff5ab2ac7 = $(`<div id="html_1ad3d981e1bc6c263ba30eaff5ab2ac7" style="width: 100.0%; height: 100.0%;">Vehicle 5 Entry: Nagpur Toll at 2024-07-11 12:28:25</div>`)[0];
+                popup_9c687ae00ab841458b1e5a6224572b9e.setContent(html_1ad3d981e1bc6c263ba30eaff5ab2ac7);
+            
+        
+
+        marker_63ffb902db007f9ace6115d4b77db61a.bindPopup(popup_9c687ae00ab841458b1e5a6224572b9e)
+        ;
+
+        
+    
+    
+            var marker_da1238c4fe7fa8b66e12549818c82a99 = L.marker(
+                [21.2514, 79.1575],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_e141b4032f817c46c2e36fb02a142528 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1b6ded50d2f2e6caf2502ad2825c9cf = $(`<div id="html_c1b6ded50d2f2e6caf2502ad2825c9cf" style="width: 100.0%; height: 100.0%;">Vehicle 5 Exit: Nagpur Toll, Toll: ₹82.37, Speed: 70.39 km/h (Speed Limit Exceeded!)</div>`)[0];
+                popup_e141b4032f817c46c2e36fb02a142528.setContent(html_c1b6ded50d2f2e6caf2502ad2825c9cf);
+            
+        
+
+        marker_da1238c4fe7fa8b66e12549818c82a99.bindPopup(popup_e141b4032f817c46c2e36fb02a142528)
+        ;
+
+        
+    
+    
+            var marker_8fc00c1dbb1060b8498b3a611bc2f49c = L.marker(
+                [21.2514, 79.1575],
+                {}
+            ).addTo(map_55eab38bbb80e424a0b39c21d67b7fcb);
+        
+    
+        var popup_de8c8ce35c30116dc19d63d3cf977743 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5d7545fed89cefb47728867e7bde55e = $(`<div id="html_b5d7545fed89cefb47728867e7bde55e" style="width: 100.0%; height: 100.0%;">Vehicle 5 (car), Total Toll: ₹575.66</div>`)[0];
+                popup_de8c8ce35c30116dc19d63d3cf977743.setContent(html_b5d7545fed89cefb47728867e7bde55e);
+            
+        
+
+        marker_8fc00c1dbb1060b8498b3a611bc2f49c.bindPopup(popup_de8c8ce35c30116dc19d63d3cf977743)
+        ;
+
+        
+    
+</script>
+</html>
