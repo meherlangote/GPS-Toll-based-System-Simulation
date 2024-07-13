@@ -16,26 +16,14 @@ Visualize Data: Generate a folium map and a pandas DataFrame to visualize the re
 Output
 The simulation generates a DataFrame showing details of each vehicle's journey, including:
 
-Vehicle ID
-Vehicle Type
-Toll Area
-Distance traveled
-Toll Charge
-Speed
-Speed Warnings
-Total Distance
-Total Toll
-
-   Vehicle ID Vehicle Type     Toll Area  Distance (km)  Toll Charge (₹)  Speed (km/h)          Speed Warning  Total Distance (km)  Total Toll (₹)
-0           1          car  Aurangabad Toll           6.78             30.50       57.53                                  6.78             30.50
-1           2        truck  Aurangabad Toll           6.78             61.00       80.11       (Speed Limit Exceeded!)           6.78             61.00
-2           3          car    Nashik Toll            1.80              6.30       51.83                                  1.80              6.30
-3           4        truck  Aurangabad Toll           6.78             61.00       60.13                                  6.78             61.00
-4           5          car    Nashik Toll            1.80              6.30       46.44                                  1.80              6.30
+![image](https://github.com/user-attachments/assets/5276f9fb-92e1-487e-af1d-8be81f8cb544)
 
 
 Map Visualization
 The folium map shows the entry and exit points of each toll area and the paths taken by the vehicles. The map is saved as toll_areas_mapf.html.
+
+![image](https://github.com/user-attachments/assets/e2e73077-33ed-4719-abc6-bbb00f02cfdf)
+
 
 Future Enhancements
 Additional Vehicle Types: Expand the simulation to include more vehicle types with different toll rates.
@@ -43,5 +31,5 @@ Real-time Data Integration: Integrate real-time traffic and toll data for more a
 User Interface: Develop a user-friendly interface for inputting toll area data and viewing simulation results.
 Advanced Analytics: Implement advanced analytics and visualization tools for deeper insights into traffic patterns and toll revenue.
 
-Conclusion
+##Conclusion##
 This project provides a comprehensive simulation of a toll-based system using Python, folium, geopy, and pandas. It offers dynamic pricing, speed monitoring, and detailed data visualization, making it a valuable tool for analyzing toll road usage and traffic patterns. Future enhancements can further improve its accuracy, usability, and analytical capabilities.
