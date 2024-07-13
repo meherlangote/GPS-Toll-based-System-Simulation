@@ -31,5 +31,5 @@ Real-time Data Integration: Integrate real-time traffic and toll data for more a
 User Interface: Develop a user-friendly interface for inputting toll area data and viewing simulation results.
 Advanced Analytics: Implement advanced analytics and visualization tools for deeper insights into traffic patterns and toll revenue.
 
-##Conclusion##
+#Conclusion#
 This project provides a comprehensive simulation of a toll-based system using Python, folium, geopy, and pandas. It offers dynamic pricing, speed monitoring, and detailed data visualization, making it a valuable tool for analyzing toll road usage and traffic patterns. Future enhancements can further improve its accuracy, usability, and analytical capabilities.
